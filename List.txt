@@ -1,0 +1,9 @@
+GraphQL API vulnerabilities
+prototype pollution
+HTTP request smuggling
+WebSockets vulnerabilities
+Web cache poisoning
+HTTP Host header attacks
+OAuth 2.0 authentication vulnerabilities
+Clickjacking (UI redressing)
+Cross-origin resource sharing (CORS)
