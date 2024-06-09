@@ -1,9 +1,24 @@
+SQL Injection
+Cross-site scripting (XSS)
+Cross-site request forgery (CSRF)
+XML external entity (XXE) injection
+Server-side request forgery (SSRF)
+OS Command Injection
+Path Traversal
+Authentication vulnerabilities
+Business Logic Vulnerability
+JWT Token Attack
+File Upload Vulnerability
+Server-side template injection (SSTI)
+Insecure Deserialization
+======================================================================================
+======================================================================================
+Clickjacking (UI redressing)
+Cross-origin resource sharing (CORS)
 GraphQL API vulnerabilities
 prototype pollution
 HTTP request smuggling
-WebSockets vulnerabilities
+WebSocket vulnerabilities
 Web cache poisoning
 HTTP Host header attacks
 OAuth 2.0 authentication vulnerabilities
-Clickjacking (UI redressing)
-Cross-origin resource sharing (CORS)
