@@ -1,0 +1,8 @@
+Embedding Shellcode in .RSRC Section
+Base64 Encoding
+XOR Encryption
+AES Encryption
+GetProcAddress With XOR Encryption
+Trojan Engineering in Code Caves
+Process Injection
+DLL Injection
