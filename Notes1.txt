@@ -1,0 +1,91 @@
+WinDBG user Mode
+WinDBG Kernal Mode
+
+Process
+Threads
+Process Environment Block	(PEB)
+Thread Environment Block	(TEB)
+Virtual Memory
+Page Protecttion
+Stacks
+Tokens
+Security Descriptor
+intergirity Level
+System calls
+
+
+
+Process level Restriction 
+Process level Migration (Code Injection) 
+
+
+svchost.exe  (Most Token Run as System Token)
+
+Evading Dectection
+RWX - VA region that are not mapped to a section object (image)
+
+JIT process .NET/ javascript - RWX Protection
+Dynamically generating native x64 code
+svchost.exe
+
+Attack Technique
+purpledoping (not sure)
+double ganging
+Ghosting
+
+
+Capture HTTPS Trafic in HTTP (Plain text)
+Best Place to do that in DropBox Before DropBox Encrypt the Stream over the HTTPS in Firefox, Chrome
+
+
+Implant 
+
+Technique  T1059
+Sub-technique T1059.003
+
+Staged(Multi Stage) and Stageless(One Stage) Payload
+
+
+Droppers and Downloaders
+
+
+Implant Functionality distributed between
+	Code Implant
+	Plug-ins
+	
+Stagers(Sort life) vs Implant(Long life)
+
+
+
+Defense
+
+Event Logging (Legcy XP/2003)
+Window event logs (Vista)
+Event Tracing           (Real Time Support Window 7)
+Trace Logging (ETW)		(Window 10)
+
+
+Windows Event Forwarding (WEF)
+
+POST Filtering (Slow)
+Get-WinEvent Security | ? {$_.id -eq 4624}
+
+PRE Filtering (Fast)
+Get-WinEvent -FilterHashtable @{LogName="Security"; Id=4624}
+
+
+Get-WinEvent Security -MaxEvents 1 | Get-Member
+
+gci -r *.etl | select FullName
+Get-WinEvent -Path C:\WINDOWS\Logs\WindowsUpdate\WindowsUpdate.20240819.103552.241.1.etl -Oldest | Format-List *
+
+ETW Architecture
+
+
+
+Windows Event Logs (Security, System, Application)
+Powershell Enhanced Logging
+Window Defender Logs
+Threat Intelligence Sensors Logs (EtwTiLog)
+Process Mitigation Policy Violation Logs (EtwTimLog)
+SysMon Logs (SysInternals Tool)
